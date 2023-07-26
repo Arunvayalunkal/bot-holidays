@@ -1,0 +1,142 @@
+
+.holiday-search-section{
+	
+	background-size:cover;
+	
+	
+}
+.offer-link{
+	color:#000;
+}
+.holiday-s-btn-width{
+	height:4.2rem;
+	margin-top:26px !important;
+	margin-left:11px;
+}
+
+.holiday-search-con{
+	position:relative;
+	margin-top:0px;
+	
+}
+.holiday-search-con-inner{
+	position:relative;
+	
+}
+.holiday-search-wrap{
+	position:absolute;
+	bottom:0;
+	left:0px;
+	right:0px;
+	background-color:transparent;
+	z-index:1000;
+}
+.holiday-search-con-inner .holiday-search-wrap{
+	top:10%;
+}
+.holiday-search-wrap .form-control{
+	border-color:#727483;
+	height:3rem;
+	padding-left:40px;
+	box-shadow:none;
+	background-color:#fff;
+}
+.holiday-search-wrap .form-control::placeholder{
+	color:#333;
+}
+.holiday-search-wrap .nav-link{
+	padding:13px 22px;
+}
+.holiday-desti {
+    background: #ECECEC url(../images/location.svg) no-repeat left 10px center !important;
+    background-size: 30px !important;
+    color: #000;
+    height: 55px !important;
+    padding: 18px 15px 18px 50px !important;
+    border: 0px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+.holiday-date {
+    background: #ECECEC url(../images/calendar.svg) no-repeat left 10px center !important;
+    background-size: 30px !important;
+    color: #000;
+    height: 55px !important;
+    padding: 18px 15px 18px 50px !important;
+    border: 0px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+.holiday-s-btn {
+    height: 55px;
+    width: 100%;
+    font-size: 22px;
+}
+.carousel-caption {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.com-pop-window{
+	left:20px;
+	width:94%;
+}
+.cal-pop-window{
+	left:15px;
+}
+.list-group-item.flight-icon::before{
+	background: url(../images/location.svg) no-repeat center center;
+    background-size: 15px;
+	
+}
+.list-group-item.flight-icon:hover::before{
+	background: url(../images/location.svg) no-repeat center center;
+    background-size: 15px;
+	
+}
+.offers-con h4{
+	color:#000;
+}
+.offers-con h5{
+	color:#be1e2d;
+}
+.holiday-pack{
+	border-top:0px;
+}
+.red-text{
+	color:#be1e2d;
+}
+.package-item {
+    transition: .5s;
+	box-shadow: 0 0 2px #CCCCCC;
+}
+.package-item:hover {
+  box-shadow: 0 0 30px #CCCCCC;
+}
+
+.inclusion{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+.inclusion li.y{
+	background:url(../images/check-red.svg) no-repeat left center;
+	background-size:13px;
+	padding:3px 0px 3px 18px;
+	font-size:15px;
+	float:left;
+	margin-right:10px;
+}
+.inclusion li.n{
+	background:url(../images/close-red.svg) no-repeat left -4px center;
+	background-size:22px;
+	padding:3px 0px 3px 20px;
+	font-size:15px;
+	float:left;
+	margin-right:10px;
+}

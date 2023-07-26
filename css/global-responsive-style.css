@@ -1,0 +1,144 @@
+
+@media (max-width: 575.98px) {
+	.s-btn-width{
+		width:100%;
+		margin-left:0px;
+		margin-top:0px !important;
+		margin-bottom:10px;
+	}
+	.search-wrap{border:none !important; margin-top:45px;}
+	
+	.home-nav{
+		display:block;
+	}
+	.form-check-inline{
+	margin-right:0px;
+}
+.fb-row{
+	border-bottom:2px #fff solid !important;
+}
+.dest-row{
+	min-height:120px;
+}
+
+.swap-icon{
+	top:104px;
+	left:0px;
+	right:0px;
+	margin:0 auto;
+	z-index:10000;
+}
+.sort-by{
+	font-size:10px;
+}
+.traveller-pop{
+	min-width:auto;
+}
+.mob-brd-0{
+	border:0px !important;
+}
+#calendar_pop_rtn{
+	left:-174px;
+}
+.list-bnr{
+	padding-top:15px;
+	padding-bottom:15px;
+}
+#mob-filter{
+	position:fixed;
+	height:100%;
+	top:0px;
+	left:0px;
+	background-color:#FFF;
+	z-index:1000;
+	padding-top:15px;
+	display:none;
+}
+.mob-brd-btm{
+	border-bottom:1px #CCCCCC solid;
+	margin-bottom:10px;
+	
+}
+.search-info{
+	display:none !important;
+}
+.mob-md-fltr-btns{
+	display:block;
+}
+.mod-search-btn{
+	background:#999 url(../images/edit.svg) no-repeat center left 5px !important;
+	background-size:25px !important;
+	color:#fff !important;
+	border:0px;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-left:35px;
+	
+}
+.fltr-search-btn{
+	background:#999 url(../images/filters.svg) no-repeat center left 8px !important;
+	background-size:22px !important;
+	color:#fff !important;
+	border:0px !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+	padding-left:35px !important;
+}
+.filter-con{
+	display:none ;
+	position:relative;
+	background-color:#deebf3;
+	padding:20px;
+	border-radius:20px;
+	margin-top:-20px;
+	margin-bottom:30px;
+}
+.filter-con .close-btn{
+	top:10px;
+	right:10px;
+}
+.navbar-nav .nav-item{
+	
+	border-top:1px #F7F7F7 solid;
+}
+.red-bg-btn{
+	background-color:#be1e2d !important;
+}
+.mob-sort-link{
+	font-size:12px;
+}
+.nav-pills .nav-link{
+	font-size:14px;
+	padding:7px 8px;
+}
+.call-us{
+	display:none;
+}
+.call-mobile{
+	background-color:#C00;
+	color:#fff;
+	display:block;
+	text-align:center;
+	width:100%;
+	padding:3px 0px;
+	border-radius:3px;
+}
+.mob-brd-0{
+	border-left:0px;
+}
+.border-top-mob{
+	border-top:1px #F5F5F5 solid;
+}
+}
+
+
+@media (max-width: 767.98px) { ... }
+
+
+@media (max-width: 991.98px) { ... }
+
+
+@media (max-width: 1199.98px) { ... }
+
+
+@media (max-width: 1399.98px) { ... }

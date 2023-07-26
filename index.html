@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookotrip</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+     <link href="css/global-style.css" rel="stylesheet">
+      <link href="css/holidays.css" rel="stylesheet">
+      <link href="css/global-responsive-style.css" rel="stylesheet">
+  </head>
+  <body>
+   
+<header>
+   	<nav class="navbar navbar-expand-lg shadow">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="images/BOT-Logo-UK 1.svg" class="logo-mob-h" alt="Bookotrip UK"></a>
+    <button class="navbar-toggler p-0 border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <a class="call-mobile" href="index.html"><span>Call Us :</span> 012-6532-568-9746 </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      	<li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Flight</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Stays</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Holidays</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Support</a>
+        </li>
+       
+      </ul>
+      
+      <a class="me-auto call-us" href="index.html">020 6532 9746 <span class="small">24/7 Customer Support</span> </a>
+      <ul class="navbar-nav ml-auto">
+       
+      <li class="nav-item">
+        <a class="nav-link reg-link mt-1 " href="index.html">Sign In </a>
+      </li>
+       
+      <li class="nav-item">
+        <a class="nav-link reg-link mt-1" href="index.html" style="color:#af1826 !important;">Sign Up </a>
+      </li>
+      
+     
+    </ul>
+    </div>
+  </div>
+</nav>
+   </header>
+<div class="home-nav border-bottom">
+	<div class="container-fluid p-0">
+    	<div class="row m-0">
+        	<div class="col-4 p-0 border-end">
+            	<a href="#" class="active"><img src="images/plane.svg" height="40" class="m-auto d-block"><span>Flight</span></a>
+            </div>
+            <div class="col-4 border-end">
+            	<a href="#"><img src="images/hotel.svg" height="42" class="m-auto d-block"><span>Stay</span></a>
+            </div>
+            <div class="col-4">
+            	<a href="#"><img src="images/beach.svg" height="42" class="m-auto d-block"><span>Holidays</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner position-relative">
+  
+
+    <div class="carousel-item active">
+      <img src="images/holidays/carousel-1.jpg" class="d-block w-100" alt="...">
+      
+      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Tours &amp; Travel</h4>
+                            <h1 class="display-3 text-white mb-md-4 fw-bold">Discover Amazing Places With Us</h1>
+                           <!-- <a href="" class="btn global-btn py-md-3 px-md-5 mt-2">Book Now</a>-->
+                        </div>
+                    </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/holidays/carousel-2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Tours &amp; Travel</h4>
+                            <h1 class="display-3 text-white mb-md-4 fw-bold">Let's Discover The World Together</h1>
+                            <!--<a href="" class="btn global-btn py-md-3 px-md-5 mt-2">Book Now</a>-->
+                        </div>
+                    </div>
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<section class="holiday-search-section">
+<div class="container-lg container-md container-sm pt-md-4 pb-md-5 pt-3 pb-3">
+    <div class="holiday-search-con">
+      <div class="holiday-search-wrap ">
+       
+        <div class="bg-white p-3 mt-2 rounded-3 shadow">
+          <div class="row">
+            <div class="col-6 pe-1 position-relative">
+              <div id="dep_row">
+              <label>Destination</label>
+                <div class="form-control holiday-desti rounded-2" id="dep-dest">Where are you going?</div>
+              </div>
+              
+              <!-------------------------------------------------------------- Destination pop up----------------------------------->
+              <div class="com-pop-window rounded-3 shadow overflow-hidden" id="dep_pop">
+                <div class="pop-fix-top">
+                  <div class="pophead">Select Departure City</div>
+                  <div class="popserch-wrap">
+                    <div class="back-arrow"></div>
+                    <input class="form-control " id="departinput" type="text" placeholder="Search.." autofocus>
+                  </div>
+                </div>
+                <ul class="list-group" id="departDropdown">
+                  <li class="list-group-item flight-icon" data-index="Munnar-India" name="dep"><span><strong>Munnar</strong> - India</span></li>
+                  <li class="list-group-item flight-icon" data-index="Wayanad-India" name="dep"><span><strong>Wayanad</strong> - India</span></li>
+                  <li class="list-group-item flight-icon" data-index="Cochin-India" name="dep"><span><strong>Cochin</strong> - India</span></li>
+                  <li class="list-group-item flight-icon" data-index="Delhi-India" name="dep"><span><strong>Delhi</strong> - India</span></li>
+                  <li class="list-group-item flight-icon" data-index="Bangalore-India" name="dep"><span><strong>Bangalore </strong>- India</span></li>
+                  <li class="list-group-item flight-icon" data-index="Goa-India" name="dep"><span><strong>Goa</strong> - India</span></li>
+                  <li class="list-group-item flight-icon" data-index="Ooty-India" name="dep"><span><strong>Ooty</strong> - India</span></li>
+                  <li class="list-group-item flight-icon" data-index="Thiruvanathapuram-India" name="dep"><span><strong>Thiruvanathapuram</strong> - India</span></li>
+                  <li class="list-group-item flight-icon" data-index="Shimla-India" name="dep"><span><strong>Shimla</strong> - India</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4 ps-1 pe-1 position-relative" id="dep-date">
+            <label>Travel Date</label>
+              <div class="holiday-date rounded-2" ><span id="dDate">Check-in</span>&nbsp;<span id="dMonth" class="month">JUN</span>&nbsp;<span id="dyear" class="year">23</span></div>
+                  <!-- calendar pop up-->
+                  <div class="com-pop-window cal-pop-window rounded-3 p-2 shadow" id="calendar_pop_dep">
+                    <div class="pop-fix-top" style="border-bottom:1px #E8E8E8 solid;">
+                      <div class="pophead">Select Check In</div>
+                      <div class="back-arrow"></div>
+                    </div>
+                    <div class="datepicker1"></div>
+                  </div>
+            </div>
+            
+            <div class="col-2 ps-1">
+            <label></label>
+              <button class="btn btn-lg global-btn holiday-s-btn w-100">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container pb-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-danger me-3 rounded" style="height: 50px; width: 50px;">
+                        <img src="images/holidays/heart.svg" height="25"> 
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h4 class="fw-bold mb-0">40000+</h4>
+                            <p class="m-0">Happy Travelers</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-danger me-3 rounded" style="height: 50px; width: 50px;">
+                           <img src="images/holidays/guarantee.svg" height="35">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h4 class="fw-bold mb-0">100%</h4>
+                            <p class="m-0">Money Safe  Guarantee</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-danger me-3 rounded" style="height: 50px; width: 50px;">
+                            <img src="images/holidays/map.svg" height="30">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h4 class="fw-bold mb-0">70+</h4>
+                            <p class="m-0">Handpicked Destinations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-danger me-3 rounded" style="height: 50px; width: 50px;">
+                            <img src="images/holidays/support-service.svg" height="30">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h4 class="fw-bold mb-0">24x7</h4>
+                            <p class="m-0">Online Booking Support
+</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+<section class="offers-con pt-4 pb-4">
+	<div class="container">
+    <div class="text-center mb-3 pb-3">
+                <h6 class="text-danger text-uppercase fw-bold" style="letter-spacing: 5px;">Bookotrip Deals</h6>
+                <h1 class="fw-bold">Value For Money Deals</h1>
+            </div>
+    	
+    <section class="flight-slider slider">
+            <div class="offer-bx border rounded-4 overflow-hidden">
+            	<img src="images/deal-1.jpg" class="img-fluid">
+                <div class="p-3">
+<h4 class="mb-2">Bangkok Packages</h4>
+                <h5 class="fw-bold mb-1">&#163; 40300</h5>
+                
+                
+                <a href="#" class="offer-link">View Package</a>
+                </div>
+          </div>
+          <div class="offer-bx border rounded-4 overflow-hidden">
+            	<img src="images/deal-2.jpg" class="img-fluid">
+                <div class="p-3">
+<h4 class="mb-2">Europe Packages</h4>
+                <h5 class="fw-bold mb-1">&#163; 60300</h5>
+                
+                
+               <a href="#" class="offer-link">View Package</a>
+                </div>
+          </div>
+          
+          <div class="offer-bx border rounded-4 overflow-hidden">
+            	<img src="images/deal-3.jpg" class="img-fluid">
+                <div class="p-3">
+<h4 class="mb-2">Maldives Packages</h4>
+                <h5 class="fw-bold mb-1">&#163; 30300</h5>
+                
+                
+               <a href="#" class="offer-link">View Package</a>
+                </div>
+          </div>
+          
+          <div class="offer-bx border rounded-4 overflow-hidden">
+            	<img src="images/deal-4.jpg" class="img-fluid">
+                <div class="p-3">
+<h4 class="mb-2">Pattaya Packages</h4>
+                <h5 class="fw-bold mb-1">&#163; 25300</h5>
+                
+                
+               <a href="#" class="offer-link">View Package</a>
+                </div>
+          </div>
+            
+           <div class="offer-bx border rounded-4 overflow-hidden">
+            	<img src="images/deal-5.jpg" class="img-fluid">
+                <div class="p-3">
+<h4 class="mb-2">Srilanka Packages</h4>
+                <h5 class="fw-bold mb-1">&#163; 15300</h5>
+                
+                
+               <a href="#" class="offer-link">View Package</a>
+                </div>
+          </div> 
+            
+            
+            
+            
+        </section>	
+        
+
+    </div>
+</section>
+<section class="holiday-pack pt-4 pb-4">
+	<div class="container">
+   <div class="text-center mb-3 pb-3">
+                <h6 class="text-danger text-uppercase fw-bold" style="letter-spacing: 5px;">Holiday Categories</h6>
+                <h1 class="fw-bold">Choose Your Holiday Type</h1>
+            </div>
+    <div class="row mt-4">
+    	<div class="col-sm-2 mb-3">
+    	<div class="card border-0 p-0">
+        	<img src="images/adventure.jpg" class="img-fluid rounded-4">
+<div class="card-body ps-1 pb-0">
+	<h5 class="card-title fw-bold mb-0">Adventure</h5>
+    <p class="card-text">568 Packages</p>
+</div>
+      </div>
+      </div>
+      <div class="col-sm-2 mb-3">
+    	<div class="card border-0 p-0">
+        	<img src="images/honeymoon.jpg" class="img-fluid rounded-4">
+<div class="card-body ps-1 pb-0">
+	<h5 class="card-title fw-bold mb-0">Honeymoon</h5>
+    <p class="card-text">568 Packages</p>
+</div>
+      </div>
+      </div>
+      <div class="col-sm-2 mb-3">
+    	<div class="card border-0 p-0">
+        	<img src="images/family.jpg" class="img-fluid rounded-4">
+<div class="card-body ps-1 pb-0">
+	<h5 class="card-title fw-bold mb-0">Family</h5>
+    <p class="card-text">568 Packages</p>
+</div>
+      </div>
+      </div>
+      <div class="col-sm-2 mb-3">
+    	<div class="card border-0 p-0">
+        	<img src="images/romantic.jpg" class="img-fluid rounded-4">
+<div class="card-body ps-1 pb-0">
+	<h5 class="card-title fw-bold mb-0">Romantic</h5>
+    <p class="card-text">568 Packages</p>
+</div>
+      </div>
+      </div>
+      <div class="col-sm-2 mb-3">
+    	<div class="card border-0 p-0">
+        	<img src="images/beach.jpg" class="img-fluid rounded-4">
+<div class="card-body ps-1 pb-0">
+	<h5 class="card-title fw-bold mb-0">Beach</h5>
+    <p class="card-text">568 Packages</p>
+</div>
+      </div>
+      </div>
+      <div class="col-sm-2 mb-3">
+    	<div class="card border-0 p-0">
+        	<img src="images/spiritual.jpg" class="img-fluid rounded-4">
+<div class="card-body ps-1 pb-0">
+	<h5 class="card-title fw-bold mb-0">Spiritual</h5>
+    <p class="card-text">568 Packages</p>
+</div>
+      </div>
+      </div>
+    </div>
+    </div>
+</section>
+
+<section class="pt-4 pb-4 bg-light">
+	<div class="container">
+    	<div class="text-center mb-3 pb-3">
+                <h6 class="text-danger text-uppercase fw-bold" style="letter-spacing: 5px;">PACKAGES</h6>
+                <h1 class="fw-bold">Pefect Tour Packages</h1>
+            </div>
+            <div class="row">
+            	<div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="images/holidays/package-1.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3 border-bottom pb-3 ">
+                                <small class="m-0 fw-bold"><i class="fa fa-map-marker red-text me-2"></i>Thailand</small>
+                                <small class="m-0 fw-bold"><i class="fa fa-calendar red-text me-2"></i>6N/7D</small>
+                                <small class="m-0 fw-bold"><i class="fa fa-user red-text me-2"></i>2 Person</small>
+                            </div>
+                            <a class="h5 text-decoration-none fw-bold " href="">Unforgettable Trip to Krabi & Phuket</a>
+                            <p class="fw-bold mt-3 mb-1 small">INCLUSIONS</p>
+                            <ul class="inclusion">
+                            	<li class="y">Flight</li>
+                            	<li class="y">Transfer</li>
+                                <li class="y">Hotel</li>
+                                <li class="y">Breakfast</li>
+                                <li class="n">Sight Seeing</li>
+                                <li class="n">Visa</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <div class="mt-3 pt-3 border-top">
+                                <div class="row">
+                                	<div class="col-6">
+                                    	<p class="small mb-0 fw-bold">From</p>
+                                    	<h4 class="m-0 fw-bold red-text">&#163; 143150</h4><p class="mb-0">per person</p> 
+                                    </div>
+                                    <div class="col-6">
+                                    	<a href-"#" class="btn btn-link text-decoration-none text-center d-block red-text fw-bold">More Details</a>
+                                        <a href-"#" class="btn global-btn w-100">Send Enquiry</a>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="images/holidays/package-1.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3 border-bottom pb-3 ">
+                                <small class="m-0 fw-bold"><i class="fa fa-map-marker red-text me-2"></i>Thailand</small>
+                                <small class="m-0 fw-bold"><i class="fa fa-calendar red-text me-2"></i>6N/7D</small>
+                                <small class="m-0 fw-bold"><i class="fa fa-user red-text me-2"></i>2 Person</small>
+                            </div>
+                            <a class="h5 text-decoration-none fw-bold " href="">Unforgettable Trip to Krabi & Phuket</a>
+                            <p class="fw-bold mt-3 mb-1 small">INCLUSIONS</p>
+                            <ul class="inclusion">
+                            	<li class="y">Flight</li>
+                            	<li class="y">Transfer</li>
+                                <li class="y">Hotel</li>
+                                <li class="y">Breakfast</li>
+                                <li class="n">Sight Seeing</li>
+                                <li class="n">Visa</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <div class="mt-3 pt-3 border-top">
+                                <div class="row">
+                                	<div class="col-6">
+                                    	<p class="small mb-0 fw-bold">From</p>
+                                    	<h4 class="m-0 fw-bold red-text">&#163; 143150</h4><p class="mb-0">per person</p> 
+                                    </div>
+                                    <div class="col-6">
+                                    	<a href-"#" class="btn btn-link text-decoration-none text-center d-block red-text fw-bold">More Details</a>
+                                        <a href-"#" class="btn global-btn w-100">Send Enquiry</a>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="images/holidays/package-1.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3 border-bottom pb-3 ">
+                                <small class="m-0 fw-bold"><i class="fa fa-map-marker red-text me-2"></i>Thailand</small>
+                                <small class="m-0 fw-bold"><i class="fa fa-calendar red-text me-2"></i>6N/7D</small>
+                                <small class="m-0 fw-bold"><i class="fa fa-user red-text me-2"></i>2 Person</small>
+                            </div>
+                            <a class="h5 text-decoration-none fw-bold " href="">Unforgettable Trip to Krabi & Phuket</a>
+                            <p class="fw-bold mt-3 mb-1 small">INCLUSIONS</p>
+                            <ul class="inclusion">
+                            	<li class="y">Flight</li>
+                            	<li class="y">Transfer</li>
+                                <li class="y">Hotel</li>
+                                <li class="y">Breakfast</li>
+                                <li class="n">Sight Seeing</li>
+                                <li class="n">Visa</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <div class="mt-3 pt-3 border-top">
+                                <div class="row">
+                                	<div class="col-6">
+                                    	<p class="small mb-0 fw-bold">From</p>
+                                    	<h4 class="m-0 fw-bold red-text">&#163; 143150</h4><p class="mb-0">per person</p> 
+                                    </div>
+                                    <div class="col-6">
+                                    	<a href-"#" class="btn btn-link text-decoration-none text-center d-block red-text fw-bold">More Details</a>
+                                        <a href-"#" class="btn global-btn w-100">Send Enquiry</a>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="images/holidays/package-1.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3 border-bottom pb-3 ">
+                                <small class="m-0 fw-bold"><i class="fa fa-map-marker red-text me-2"></i>Thailand</small>
+                                <small class="m-0 fw-bold"><i class="fa fa-calendar red-text me-2"></i>6N/7D</small>
+                                <small class="m-0 fw-bold"><i class="fa fa-user red-text me-2"></i>2 Person</small>
+                            </div>
+                            <a class="h5 text-decoration-none fw-bold " href="">Unforgettable Trip to Krabi & Phuket</a>
+                            <p class="fw-bold mt-3 mb-1 small">INCLUSIONS</p>
+                            <ul class="inclusion">
+                            	<li class="y">Flight</li>
+                            	<li class="y">Transfer</li>
+                                <li class="y">Hotel</li>
+                                <li class="y">Breakfast</li>
+                                <li class="n">Sight Seeing</li>
+                                <li class="n">Visa</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <div class="mt-3 pt-3 border-top">
+                                <div class="row">
+                                	<div class="col-6">
+                                    	<p class="small mb-0 fw-bold">From</p>
+                                    	<h4 class="m-0 fw-bold red-text">&#163; 143150</h4><p class="mb-0">per person</p> 
+                                    </div>
+                                    <div class="col-6">
+                                    	<a href-"#" class="btn btn-link text-decoration-none text-center d-block red-text fw-bold">More Details</a>
+                                        <a href-"#" class="btn global-btn w-100">Send Enquiry</a>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="images/holidays/package-1.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3 border-bottom pb-3 ">
+                                <small class="m-0 fw-bold"><i class="fa fa-map-marker red-text me-2"></i>Thailand</small>
+                                <small class="m-0 fw-bold"><i class="fa fa-calendar red-text me-2"></i>6N/7D</small>
+                                <small class="m-0 fw-bold"><i class="fa fa-user red-text me-2"></i>2 Person</small>
+                            </div>
+                            <a class="h5 text-decoration-none fw-bold " href="">Unforgettable Trip to Krabi & Phuket</a>
+                            <p class="fw-bold mt-3 mb-1 small">INCLUSIONS</p>
+                            <ul class="inclusion">
+                            	<li class="y">Flight</li>
+                            	<li class="y">Transfer</li>
+                                <li class="y">Hotel</li>
+                                <li class="y">Breakfast</li>
+                                <li class="n">Sight Seeing</li>
+                                <li class="n">Visa</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <div class="mt-3 pt-3 border-top">
+                                <div class="row">
+                                	<div class="col-6">
+                                    	<p class="small mb-0 fw-bold">From</p>
+                                    	<h4 class="m-0 fw-bold red-text">&#163; 143150</h4><p class="mb-0">per person</p> 
+                                    </div>
+                                    <div class="col-6">
+                                    	<a href-"#" class="btn btn-link text-decoration-none text-center d-block red-text fw-bold">More Details</a>
+                                        <a href-"#" class="btn global-btn w-100">Send Enquiry</a>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="images/holidays/package-1.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3 border-bottom pb-3 ">
+                                <small class="m-0 fw-bold"><i class="fa fa-map-marker red-text me-2"></i>Thailand</small>
+                                <small class="m-0 fw-bold"><i class="fa fa-calendar red-text me-2"></i>6N/7D</small>
+                                <small class="m-0 fw-bold"><i class="fa fa-user red-text me-2"></i>2 Person</small>
+                            </div>
+                            <a class="h5 text-decoration-none fw-bold " href="">Unforgettable Trip to Krabi & Phuket</a>
+                            <p class="fw-bold mt-3 mb-1 small">INCLUSIONS</p>
+                            <ul class="inclusion">
+                            	<li class="y">Flight</li>
+                            	<li class="y">Transfer</li>
+                                <li class="y">Hotel</li>
+                                <li class="y">Breakfast</li>
+                                <li class="n">Sight Seeing</li>
+                                <li class="n">Visa</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <div class="mt-3 pt-3 border-top">
+                                <div class="row">
+                                	<div class="col-6">
+                                    	<p class="small mb-0 fw-bold">From</p>
+                                    	<h4 class="m-0 fw-bold red-text">&#163; 143150</h4><p class="mb-0">per person</p> 
+                                    </div>
+                                    <div class="col-6">
+                                    	<a href-"#" class="btn btn-link text-decoration-none text-center d-block red-text fw-bold">More Details</a>
+                                        <a href-"#" class="btn global-btn w-100">Send Enquiry</a>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<section class="home-con mt-4 mb-5">
+	<div class="container text-center">
+    	<h2 class="text-center">BookOtrip</h2>
+        <p class="lead fw-bold mb-4 text-center">Airline Ticket Booking, Best Holiday Packages, Smiles and Much More…</p>
+        <p>Castles and cuisines, temples and tigers, summits and shores; India brim with beautiful experiences. Varied, vast and vivacious, exploring India requires meticulous planning that is what we are adept at. Leave behind all your worldly worries. Leave behind the day-to- day chaos. Explore vividness of India. Enjoy togetherness! Enjoy vacations!</p>
+        <p>BookOtrip is one of the biggest players in the Indian travel and leisure industry. Headquartered in Texas, the United States, BookOtrip has a strong dedicated team servicing the Indian markets. BookOtrip offers some of the cheapest air tickets in the industry for both domestic and international travel destinations. Sign in with BookOtrip and get 2000 INR immediately. You could use this e-cash to further save money on your tickets. BookOtrip has fair tracker services, on subscribing to the same our customers have an opportunity to get regular updates on the latest offers introduced by various domestic and international airlines. This information can help our customers plan their vacations or business trips accordingly.</p>
+        <p>BookOtrip is one of the very few travel agencies that is open to customization of tour packages, Best holiday packages are sometimes invented with the help of our customers. BookOtrip encourages our customers to make adequate customizations to enjoy their packages to its fullest. BookOtrip hotel services help our customers to get some of the best deals in the hotel industry. We have tie-ups with more than 100,000 hotels all over the world giving us the leverage of offering cheap hotel fares to our customers anywhere in the world. Since we are a high volume business, our partners offer us competitive rates for our quotes. We have happily passed on these low fares to our customers. This is what makes us different from the rest of our competition. Travel for less, Travel with BookOtrip.</p>
+    </div>
+</section>
+<section class="footer pt-5 pb-2">
+	<div class="container border-bottom pb-4">
+    	<div class="row mb-4 pb-4 border-bottom border-dark">
+        	<div class="col-sm-3">
+            <img src="images/BOT-Logo-UK 1.svg" class="logo-mob-h" style="margin-left:-10px;" alt="Bookotrip UK">
+            <ul>
+            	<li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+            </div>
+            <div class="col-sm-3">
+            	<h3>Popular Destinations</h3>
+                <ul>
+                	<li><a href="#">Jamaica Holidays</a></li>
+                    <li><a href="#">Dubai Holidays</a></li>
+                    <li><a href="#">Antalya Holidays</a></li>
+                    <li><a href="#">Phuket Holidays</a></li>
+                    <li><a href="#">Bali Holidays</a></li>
+                    <li><a href="#">Las Vegas Holidays</a></li>
+                    <li><a href="#">Maldives Holidays</a></li>
+                    <li><a href="#">Cancun Holidays</a></li>
+                    <li><a href="#">Miami Holidays</a></li>
+                     <li><a href="#">Orlando Holidays</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+            	<h3>Cheapest Flights</h3>
+                <ul>
+                	<li><a href="#">Flights to San Francisco</a></li>
+                    <li><a href="#">Flights to Muscat</a></li>
+                    <li><a href="#">Flights to Sydney</a></li>
+                    <li><a href="#">Flights to Cancun</a></li>
+                    <li><a href="#">Flights to India</a></li>
+                    <li><a href="#">Flights to New York</a></li>
+                    <li><a href="#">Flights to Dubai</a></li>
+                    <li><a href="#">Flights to Toronto</a></li>
+                    <li><a href="#">Flights to Bangkok</a></li>
+                    <li><a href="#">Flights to Sri Lanka</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+            	<h3>Customer Support </h3>
+                <ul>
+                	<li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Group Booking</a></li> 
+                    <li><a href="#">Submit Feedback</a></li>
+                    <li><a href="#">Customer Feedback FAQ's</a></li>
+                </ul>
+                
+                <h3 class="mt-3">Follow Us </h3>
+                <div class="row">
+                	<div class="col-2"><a href="#"><img src="images/facebook.svg" height="20"></a></div>
+                    <div class="col-2"><a href="#"><img src="images/twitter.svg" height="20"></a></div>
+                    <div class="col-2"><a href="#"><img src="images/instagram.svg" height="20"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-5">
+            	
+               <span style="font-size:13px;">Copyright © 2023 - Bookotrip is registered in UK </span>
+               
+              
+            </div>
+            <div class="col-sm-7">
+            <span style="font-size:13px; font-weight:700;">Other Products </span><span class="privacy-link"><a href="#">Flights</a> <a href="#">Holidays</a> <a href="#">International Flights</a> <a href="#">Domestic Flights</a> <a href="#">Corporate Travel</a></span>
+            </div>
+        </div>
+    </div>
+   
+</section>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+	<script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/flight.js"></script>
+   
+  </body>
+</html>
