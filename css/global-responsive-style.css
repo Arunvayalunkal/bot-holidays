@@ -134,8 +134,11 @@
 .holiday-search-wrap{
 	position:static;
 }
-.holiday-search-section h1{
+.holiday-carousel h1{
 	font-size:16px !important;
+}
+.holiday-carousel h4{
+	font-size:13px !important;
 }
 }
 
