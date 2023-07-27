@@ -144,7 +144,7 @@
 	font-size:14px;
 }
 .package-tab .nav-tabs .nav-link{
-	padding:5px 9px;
+	padding:5px 6px;
 	font-size:10px;
 	margin-right:3px;
 }
@@ -157,6 +157,14 @@
 }
 .pop-bg-img{
 	min-height:300px;
+}
+.package-tab .accordion-button span.Itinerary-day{
+	border-radius:20px;
+	text-align:center;
+}
+.package-tab .accordion-button:not(.collapsed) span.Itinerary-day{
+	border-radius:20px;
+	text-align:center;
 }
 }
 
