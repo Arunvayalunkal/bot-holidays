@@ -140,6 +140,24 @@
 .holiday-carousel h4{
 	font-size:13px !important;
 }
+.enq-btn{
+	font-size:14px;
+}
+.package-tab .nav-tabs .nav-link{
+	padding:5px 9px;
+	font-size:10px;
+	margin-right:3px;
+}
+.enq-pop{
+	width:350px;
+	position:absolute;
+}
+.enq-head{
+	font-size:18px;
+}
+.pop-bg-img{
+	min-height:300px;
+}
 }
 
 
