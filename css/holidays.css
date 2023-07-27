@@ -435,3 +435,6 @@ slider .right.nonr {
 	background-size:35px;
 	cursor:pointer;
 }
+.tab-mobile-head{
+	display:none;
+}

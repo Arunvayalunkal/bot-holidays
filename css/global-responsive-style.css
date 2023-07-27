@@ -143,10 +143,8 @@
 .enq-btn{
 	font-size:14px;
 }
-.package-tab .nav-tabs .nav-link{
-	padding:5px 6px;
-	font-size:10px;
-	margin-right:3px;
+.package-tab nav{
+	display:none;
 }
 .enq-pop{
 	width:350px;
@@ -165,6 +163,19 @@
 .package-tab .accordion-button:not(.collapsed) span.Itinerary-day{
 	border-radius:20px;
 	text-align:center;
+}
+.tab-mobile-head{
+	background-color:#be1e2d;
+	color:#fff;
+	font-size:20px;
+	font-weight:700;
+	display:block;
+	padding:10px 20px;
+	border-radius:10px;
+}
+.tab-mobile-show{
+	display:block !important;
+	opacity:1 !important;
 }
 }
 
