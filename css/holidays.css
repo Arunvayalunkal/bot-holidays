@@ -438,3 +438,14 @@ slider .right.nonr {
 .tab-mobile-head{
 	display:none;
 }
+.bg-lightyellow{
+	background-color:#FCF1D1;
+}
+.back-ph{
+	width:30px;
+	height:30px;
+	position:absolute;
+	top:-14px;
+	left:0px;
+	cursor:pointer;
+}
